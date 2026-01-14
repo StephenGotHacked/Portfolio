@@ -21,8 +21,6 @@
 
   <!--style sheet-->
   <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
@@ -357,7 +355,7 @@
                   What course did I take during my college years?
                 </button>
               </h5>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush"" >
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush" >
                                 <div class=" accordion-body">
                 <p>I completed a Bachelor of Science in Information Technology (BSIT), successfully finishing a comprehensive four-year academic program.</p>
               </div>
@@ -447,12 +445,12 @@
         <div class="col-md-5">
           <form id="contact-form">
             <div class="mb-3">
-              <input type="name" class="form-control p-3 rounded-4" name="from_name" id="name" aria-describedby="nameHelpId"
-                placeholder="your name" />
+              <input type="text" class="form-control p-3 rounded-4" name="from_name" id="from_name" aria-describedby="nameHelpId"
+                placeholder="your name" required/>
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control p-3 rounded-4" name="from_email" id="email" aria-describedby="emailHelpId"
-                placeholder="your email" />
+              <input type="email" class="form-control p-3 rounded-4" name="from_email" id="from_email" aria-describedby="emailHelpId"
+                placeholder="your email" required/>
             </div>
             <div class="mb-3">
               <textarea class="form-control p-3 rounded-4" name="message" placeholder="your message" id="message" rows="3"></textarea>
@@ -546,9 +544,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--cdn link-->
   <script src="js/plugins.js"></script>
   <script type="text/javascript" src="js/lightbox.min.js"></script>
-
+  
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
   <script src="js/script.js"></script>
 </body>
