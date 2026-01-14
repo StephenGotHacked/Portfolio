@@ -77,18 +77,24 @@
 
 })(jQuery);
 
-emailjs.init("IIf_U-n_teoB8s0LS");
+document.addEventListener("DOMContentLoaded", function () {
 
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+  emailjs.init("IIf_U-n_teoB8s0LS");
 
-  emailjs.sendForm(
-    "service_z0b0y4g",
-    "template_t0lhs78",
-    this
-  ).then(
-    () => alert("Message sent successfully"),
-    () => alert("Failed to send message")
-  );
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_z0b0y4g",
+      "template_t0lhs78",
+      this
+    ).then(
+      () => {
+        alert("Message sent successfully");
+        this.reset();
+      },
+      () => alert("Failed to send message")
+    );
+  });
+
 });
-
