@@ -84,10 +84,11 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
   emailjs.sendForm(
     "service_z0b0y4g",
-    "template_blfutat",
+    "template_t0lhs78",
     this
   ).then(
     () => alert("Message sent successfully"),
     () => alert("Failed to send message")
   );
 });
+
